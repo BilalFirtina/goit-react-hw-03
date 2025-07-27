@@ -2,7 +2,7 @@ import styles from "./ContactList.module.css";
 import { IoPerson } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 
-const ContactList = ({ people }) => {
+const ContactList = ({ people, deletePerson }) => {
   return (
     <div className={styles.container}>
       {people.map((person) => (
@@ -17,7 +17,7 @@ const ContactList = ({ people }) => {
               {person.number}
             </span>
           </div>
-          <button>Delete</button>
+          <button onClick={() => deletePerson(person.id)}>Delete</button>
         </div>
       ))}
     </div>

@@ -1,0 +1,19 @@
+.form {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  width: calc((100% - 60px) / 4);
+  border-radius: 8px;
+  padding: 10px;
+}
+.form button {
+  width: 40%;
+  margin-top: 10px;
+  margin: 10px auto 0px;
+}
+.form input {
+  height: 25px;
+}
+.error {
+  color: crimson;
+}
