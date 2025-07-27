@@ -3,7 +3,11 @@ const SearchBox = ({ searchFunction }) => {
   return (
     <>
       <p className={style.searchBoxText}>Find contacts by name</p>
-      <input type="text" onChange={searchFunction} />
+      <input
+        type="text"
+        onChange={searchFunction}
+        placeholder="Arama Yapabilirsiniz."
+      />
     </>
   );
 };
