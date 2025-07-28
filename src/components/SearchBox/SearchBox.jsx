@@ -1,11 +1,11 @@
 import style from "./SearchBox.module.css";
-const SearchBox = ({ searchFunction }) => {
+const SearchBox = ({ onChange }) => {
   return (
     <>
       <p className={style.searchBoxText}>Find contacts by name</p>
       <input
         type="text"
-        onChange={searchFunction}
+        onChange={onChange}
         placeholder="Arama Yapabilirsiniz."
       />
     </>

@@ -55,7 +55,7 @@ const App = () => {
     <div>
       <h1>Phonebook</h1>
       <ContactForm handleSubmit={handleSubmit} />
-      <SearchBox searchFunction={searchFunction} />
+      <SearchBox onChange={searchFunction} />
       <ContactList people={filteredPeople} deletePerson={deletePerson} />
     </div>
   );
